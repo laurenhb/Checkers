@@ -1,0 +1,132 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    display: inline-block;
+}
+
+.main-content{
+    width: 100%;
+}
+
+.toggle-switch{
+    position: relative;
+    bottom: 5px;
+    margin-left: 7px;
+}
+
+.black-cell, .white-cell{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.black-cell{
+    background: black;
+}
+
+.white-cell{
+    background: white;
+}
+
+.row{
+    height: 100px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.red-piece, .red-king-piece, .black-piece, .black-king-piece{
+    background-size: 90px 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.black-piece{
+    background-image: url(checkers_pics/black.png);
+}
+
+.black-king-piece{
+    background-image: url(checkers_pics/king-black.gif);
+}
+
+.red-piece{
+    background-image: url(checkers_pics/red.png);
+}
+
+.red-king-piece {
+    background-image: url(checkers_pics/king-red.gif);
+}
+
+.motherBoard{
+    margin-left: auto;
+    margin-right: auto;
+    border: black 1px solid;
+    display: inline-block;
+}
+
+.available-cell{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: #99ff99;
+}
+
+.clicked-cell{
+    background-color: #bddfeb;
+}
+
+.red-piece-prison-title{
+    display: inline-block;
+    width: 100%;
+}
+
+#black-piece-prison, #red-piece-prison{
+    display: inline-block;
+    width: 300px;
+    height: 400px;
+}
+
+
+/*.red-left, .black-right {
+    display: inline-block;
+}*/
+.prisonRow {
+   margin-top:0px;
+   margin-bottom:0px;
+   padding: 0px;
+   height: 24.8%;
+   width: 100%;
+   /*margin-right: 0 !important;
+   margin-left: 0 !important;*/
+}
+
+
+.prisonCell {
+   height: 100%;
+   width: 32%;
+   display:inline-block;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   border: grey 1px solid;
+}
+
+.cancel {
+    background-color: black !important;
+}
