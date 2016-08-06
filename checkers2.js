@@ -10,6 +10,9 @@ var turnCount = 0;
 var _evenTurnColor = '';
 var _toggleHighlightedCells = true;
 
+setupBlackPiecePrison();
+setupRedPiecePrison();
+setupBoard();
 chooseFirstTeam();
 
 function chooseFirstTeam(){
@@ -34,7 +37,6 @@ function chooseFirstTeam(){
         });
     }
 
-setupBlackPiecePrison ();
 function setupBlackPiecePrison () {
    var blackPiecePrison = document.getElementById('black-piece-prison');
    for (var k = 0; k < 4; k++) { //for rows
@@ -58,7 +60,6 @@ function setupBlackPiecePrison () {
    }
 }
 
-setupRedPiecePrison ();
 function setupRedPiecePrison () {
    var redPiecePrison = document.getElementById('red-piece-prison');
    for (var k = 0; k < 4; k++) { //for rows
@@ -84,7 +85,6 @@ function setupRedPiecePrison () {
 
 
 
-setupBoard();
 function setupBoard(){
     var gameBoardDiv = document.getElementById('motherBoard');
     for (var i = 0; i < 8; i++){
@@ -198,7 +198,7 @@ function checkAvailalbe (row, cell, direction, pieceColor){
             _availableSquares.push(upLeftCell);
             if (fails > 0){
                 jumpedPieces++;
-                checkPotentiallyJumped (row, cell, direction)
+                checkPotentiallyJumped (row, cell, direction);
                 newDiagonal = true;
                 checkOtherDiagonal (row, cell, direction, pieceColor);
                 newDiagonal = false;
@@ -382,7 +382,7 @@ function updateBoard (typeOfEvent){
                                         }
                                         break;
                                     }else if (_capturedBlackArray[k][l].status === 'piece'){
-                                        paintedCell++
+                                        paintedCell++;
                                     }
                                 }
                                 if (paintedCell < 3){
@@ -416,7 +416,7 @@ function updateBoard (typeOfEvent){
                                         }
                                         break;
                                     }else if (_capturedRedArray[k][l].status === 'piece'){
-                                        paintedCell++
+                                        paintedCell++;
                                     }
                                 }
                                 if (paintedCell < 3){
@@ -484,7 +484,7 @@ function updateBoard (typeOfEvent){
                                         }
                                         break;
                                     }else if (_capturedRedArray[k][l].status === 'piece'){
-                                        paintedCell++
+                                        paintedCell++;
                                     }
                                 }
                                 if (paintedCell < 3){
